@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es6",
+    "module": "CommonJS",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es6", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@myorg/api/core": ["libs/api/core/src/index.ts"],
+      "@myorg/api/database": ["libs/api/database/src/index.ts"],
+      "@myorg/api/users": ["libs/api/users/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
